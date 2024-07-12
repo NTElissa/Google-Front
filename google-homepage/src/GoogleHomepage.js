@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Mic, Camera, Grid, Beaker } from 'lucide-react'; 
+import { Search, Mic, Camera, Grid, Beaker } from 'lucide-react';
 
 const GoogleClone = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -13,10 +13,10 @@ const GoogleClone = () => {
     <div className="flex flex-col min-h-screen bg-[#202124] text-[#e8eaed]">
       <header className="p-4">
         <nav className="flex justify-end items-center space-x-4">
-          <a href="#" className="text-sm hover:underline">Gmail</a>
-          <a href="#" className="text-sm hover:underline">Images</a>
+          <a href="https://mail.google.com" className="text-sm hover:underline">Gmail</a>
+          <a href="https://www.google.com/imghp" className="text-sm hover:underline">Images</a>
           <button className="p-2 rounded-full hover:bg-[#303134]">
-            <Beaker size={20} /> {/* Search Labs Icon */}
+            <Beaker size={20} />
           </button>
           <button className="p-2 rounded-full hover:bg-[#303134]">
             <Grid size={20} />
@@ -54,10 +54,10 @@ const GoogleClone = () => {
           </button>
         </div>
         <p className="mt-6 text-sm text-[#999da2]">
-          Google offered in: 
-          <a href="#" className="text-[#8ab4f8] hover:underline ml-1">Français</a>
-          <a href="#" className="text-[#8ab4f8] hover:underline ml-1">Kiswahili</a>
-          <a href="#" className="text-[#8ab4f8] hover:underline ml-1">Ikinyarwanda</a>
+          Google offered in:
+          <a href="https://www.google.com/search?hl=fr" className="text-[#8ab4f8] hover:underline ml-1">Français</a>
+          <a href="https://www.google.com/search?hl=sw" className="text-[#8ab4f8] hover:underline ml-1">Kiswahili</a>
+          <a href="https://www.google.com/search?hl=rw" className="text-[#8ab4f8] hover:underline ml-1">Ikinyarwanda</a>
         </p>
       </main>
 
@@ -67,15 +67,15 @@ const GoogleClone = () => {
         </div>
         <div className="px-4 py-3 flex flex-col sm:flex-row justify-between">
           <div className="space-x-4 mb-2 sm:mb-0">
-            <a href="#" className="hover:underline">About</a>
-            <a href="#" className="hover:underline">Advertising</a>
-            <a href="#" className="hover:underline">Business</a>
-            <a href="#" className="hover:underline">How Search works</a>
+            <a href="https://about.google" className="hover:underline">About</a>
+            <a href="https://www.google.com/intl/en/ads" className="hover:underline">Advertising</a>
+            <a href="https://www.google.com/services" className="hover:underline">Business</a>
+            <a href="https://www.google.com/search/howsearchworks" className="hover:underline">How Search works</a>
           </div>
           <div className="space-x-4">
-            <a href="#" className="hover:underline">Privacy</a>
-            <a href="#" className="hover:underline">Terms</a>
-            <a href="#" className="hover:underline">Settings</a>
+            <a href="https://policies.google.com/privacy" className="hover:underline">Privacy</a>
+            <a href="https://policies.google.com/terms" className="hover:underline">Terms</a>
+            <a href="https://www.google.com/preferences" className="hover:underline">Settings</a>
           </div>
         </div>
       </footer>
