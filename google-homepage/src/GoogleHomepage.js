@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Mic, Camera, Grid } from 'lucide-react';
+import { Search, Mic, Camera, Grid, Beaker } from 'lucide-react'; 
 
 const GoogleClone = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -15,6 +15,9 @@ const GoogleClone = () => {
         <nav className="flex justify-end items-center space-x-4">
           <a href="#" className="text-sm hover:underline">Gmail</a>
           <a href="#" className="text-sm hover:underline">Images</a>
+          <button className="p-2 rounded-full hover:bg-[#303134]">
+            <Beaker size={20} /> {/* Search Labs Icon */}
+          </button>
           <button className="p-2 rounded-full hover:bg-[#303134]">
             <Grid size={20} />
           </button>
@@ -37,14 +40,8 @@ const GoogleClone = () => {
             />
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#9aa0a6]" size={20} />
             <div className="absolute right-4 top-1/2 transform -translate-y-1/2 flex items-center space-x-4">
-              <svg className="w-6 h-6 cursor-pointer" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="#4285F4"/>
-                <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="#34A853"/>
-              </svg>
-              <svg className="w-6 h-6 cursor-pointer" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="3.2" fill="#4285F4"/>
-                <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" fill="#FBBC05"/>
-              </svg>
+              <Mic className="w-6 h-6 cursor-pointer text-[#4285F4]" />
+              <Camera className="w-6 h-6 cursor-pointer text-[#FBBC05]" />
             </div>
           </div>
         </form>
